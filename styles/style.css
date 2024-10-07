@@ -1,33 +1,30 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: grid;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-}
-
-h1 {
-    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;/* якщо прибрати padding в img {, то можна прибрати взагалі*/
 }
 
 .gallery {  
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 20px;  
+    gap: 10px;  
 }
 
 .gallery_item {
-    border: 1px solid grey; 
+    border: 1px solid lightgrey; 
 }
 
 img {
     width: 100%;
     height: auto;
     padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
 }
